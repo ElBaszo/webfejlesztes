@@ -1,0 +1,212 @@
+/*Álltalános*/
+*{
+    border-collapse: collapse;
+    margin: 0;
+    padding: 0;
+}
+html{
+    background-color: black;
+    text-align: center;
+    font-family: "Goldman", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+     border: 0;
+     padding: 0;
+    }
+/*Mobil*/
+.header{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction:row;
+    background-image: url(kepek/test.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: space-evenly;
+    align-items: center;
+}
+h1{
+    color: white;
+    display: none;
+    margin: 20px;
+}
+h2{
+    text-align: center;
+}
+#subilogo{
+    position: relative;
+    border: none;
+    cursor: pointer;
+    max-width: 15%;
+    background-color: black;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+
+}
+ul{
+    list-style-type: none;
+}
+nav{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+nav ul a{
+    display: block;
+    padding: 5px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: black;
+    background-color: rgb(4, 29, 173);
+}
+nav ul a:hover{
+    background-color: white;
+}
+nav ul a.active{
+    color: gold;
+}
+
+/*---------------------------------------------------------------------------*/
+.container{
+    color: whitesmoke;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    align-items: stretch;
+}
+.blockok{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+}
+#b{
+    flex-wrap: wrap-reverse;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+#kep2{
+    border-radius: 10px;
+}
+#c{
+    flex-wrap: wrap-reverse;
+}
+article{
+    text-align: center;
+}
+#urlap{
+    flex-direction: column;
+}
+form{
+    color: aliceblue;
+}
+footer{
+    background-color: grey;
+}
+/*jatek-------------------------------------------------------------*/
+.game{
+    position: relative;
+}
+.jatek{
+    height: auto;
+}
+.jgomb{
+    background-color: aliceblue;
+    cursor: pointer;
+    background: transparent;
+    width: auto;
+    border: none;
+    color: transparent;
+    
+}
+#felni{
+    position: absolute;
+    left: 75%;
+    bottom: 12%;
+}
+#fekek{
+    position: absolute;
+    left: 15%;
+    bottom: 12%;
+}
+#szarny{
+    position: absolute;
+    right: 0%;
+    bottom: 55%;
+}
+#motor{
+    position: absolute;
+    left: 9%;
+    bottom: 37%;
+}
+#felfuggesztes{
+    position: absolute;
+    left: 13%;
+    bottom: 26%;
+}
+#felfuggesztes2{
+    position: absolute;
+    right: 12%;
+    bottom: 26%;
+}
+#kipuf{
+    position: absolute;
+    right: 0%;
+    bottom: 12%;
+}
+.valaszok{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.valasz{
+    flex-basis: auto;
+    background-color: grey;
+}
+
+#chadmenu{
+    display: none;
+}
+
+/*tablet*/
+@media all and (min-width: 600px) {
+    .header{
+    }
+    nav{
+    }
+    article{
+        flex-basis: 33%;
+
+    }
+    aside{
+        flex-basis: 66%;
+    }
+    .valasz{
+        flex-basis: 30%;
+    }
+}
+@media all and (min-width: 770px) {
+    h1{
+        display: contents;
+        flex-basis: 20%;
+    }
+    .header{
+        flex-direction: row;
+        justify-content: space-between;
+        background-image: none;
+    }
+    #subilogo{
+        flex-basis: 10%;
+    }
+    #lilmenu{
+        display: none;
+    }
+    #chadmenu{
+        display: contents;
+        flex-basis: 20%;
+    }
+
+}
